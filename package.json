@@ -1,0 +1,13 @@
+{
+  "name": "monkey",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "yarn workspaces foreach run clean",
+    "dev:web":"yarn workspace @monkey/web run dev",
+    "build:packages": "yarn workspaces foreach -A run build"
+  }
+}
