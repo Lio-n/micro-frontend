@@ -1,37 +1,44 @@
 {
-    "name": "@monkey/components",
-    "version": "0.40.0",
-    "keywords": [
-        "react",
-        "components"
-    ],
-    "license": "MIT",
-    "types": "dist/index.d.ts",
-    "exports": {
-        ".": "./dist"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "scripts": {
-        "test": "echo \"Error: run tests from root\" && exit 1",
-        "clean": "rimraf dist/",
-        "prepublishOnly": "yarn run build",
-        "build": "tsup",
-        "tsc:build": "tsc",
-        "dev": "tsup --watch",
-        "check-types": "tsc --noEmit"
-    },
-    "devDependencies": {
-        "@types/react": "^17.0.43",
-        "tsup": "6.6.0",
-        "typescript": "^5.1.6"
-    },
-    "peerDependencies": {
-        "next": "^13.4.11",
-        "react": "^18.2.0"
-    },
-    "dependencies": {
-        "react-dom": "^18.2.0"
-    }
+  "name": "@monkey/components",
+  "version": "0.40.0",
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "clean": "rimraf dist/",
+    "prepublishOnly": "yarn run build",
+    "build": "tsup",
+    "tsc:build": "tsc",
+    "dev": "tsup --watch",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.43",
+    "tsup": "6.6.0",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "react-dom": "^18.2.0"
+  },
+  "resolutions": {
+    "babel-loader": "8.1.0",
+    "@types/react": "^17.0.38",
+    "webpack": "^5.74.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }

@@ -9,7 +9,7 @@ const App: React.FC = ({ children, ...props }) => {
         width: '50vw',
         minWidth: '25rem',
         height: '25rem',
-        backgroundColor: '#00ffff75',
+        backgroundColor: 'rgba(128, 0, 255, 0.46)',
       }}
     >
       <h2
@@ -20,9 +20,8 @@ const App: React.FC = ({ children, ...props }) => {
           fontSize: '2rem',
         }}
       >
-        [noodle frontend]
+        [dashboard frontend (craco@7.1.0)]
       </h2>
-      {children}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 {
-  "name": "@monkey/noodle",
+  "name": "@monkey/dashboard",
   "version": "1.0.0",
   "private": true,
   "license": "Apache-2.0",
@@ -174,7 +174,7 @@
     ]
   },
   "scripts": {
-    "start:run": "cross-env REACT_APP_ANALYTICS_ENV=development PORT=3002 craco start",
+    "start:run": "cross-env REACT_APP_ANALYTICS_ENV=development PORT=3001 craco start",
     "start": "yarn run start:run",
     "serve": "node server.js",
     "prebuild": "yarn run licenses",
@@ -239,5 +239,9 @@
   "devDependencies": {
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
     "@types/express": "^4.17.13"
+  },
+    "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
